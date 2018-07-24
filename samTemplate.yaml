@@ -49,29 +49,8 @@ Resources:
       Runtime: python3.6
       CodeUri: ./CreateTable
       Role: 'arn:aws:iam::862117308857:role/MyLambdaRole1'
-      Events:
-        Stream:
-          Type: DynamoDB
-          Properties:
-            Stream: !GetAtt CourseCatalog.StreamArn
-            BatchSize: 100
-            StartingPosition: TRIM_HORIZON
+      MemorySize: 128
+      Timeout: 30
       Environment:
         Variables:
           REGION: us-east-1
-  CourseCatalog:
-    Type: AWS::DynamoDB::Table
-    Properties:
-      AttributeDefinitions:
-        - AttributeName: category
-          AttributeType: S
-        - AttributeName: course
-          AttributeType: s
-      KeySchema:
-        - AttributeName: category
-          KeyType: HASH
-        - AttributeName: course
-          KeyType: RANGE
-      ProvisionedThroughput:
-          ReadCapacityUnits: 1
-          WriteCapacityUnits: 1
