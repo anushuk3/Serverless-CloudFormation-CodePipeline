@@ -66,6 +66,7 @@ Resources:
         - AttributeName: category
           AttributeType: S
         - AttributeName: course
+          AttributeType: S
       KeySchema:
         - AttributeName: id
           KeyType: HASH
