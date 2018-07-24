@@ -42,19 +42,3 @@ Resources:
         Variables:
           REGION: us-east-1
           DB_TABLE_NAME: CourseCatalog
-  CourseCatalog:
-    Type: AWS::DynamoDB::Table
-    Properties:
-      AttributeDefinitions:
-        - AttributeName: category
-          AttributeType: S
-        - AttributeName: course
-          AttributeType: s
-      KeySchema:
-        - AttributeName: category
-          KeyType: HASH
-        - AttributeName: course
-          KeyType: RANGE
-      ProvisionedThroughput:
-          ReadCapacityUnits: 1
-          WriteCapacityUnits: 1
