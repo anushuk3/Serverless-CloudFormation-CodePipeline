@@ -16,8 +16,8 @@
       <file leaf-file-name="samTemplate.yaml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/samTemplate.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+            <state relative-caret-position="514">
+              <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -120,27 +120,7 @@
             </path>
             <path>
               <item name="Serverless-CloudFormation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Serverless-CloudFormation" type="462c0819:PsiDirectoryNode" />
-              <item name="CreateTable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Serverless-CloudFormation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Serverless-CloudFormation" type="462c0819:PsiDirectoryNode" />
-              <item name="GetLambda" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Serverless-CloudFormation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Serverless-CloudFormation" type="462c0819:PsiDirectoryNode" />
-              <item name="PutLambda" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Serverless-CloudFormation" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lambda-CloudFormation-CICD" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Serverless-CloudFormation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lambda-CloudFormation-CICD" type="462c0819:PsiDirectoryNode" />
-              <item name="LambdaCode" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -353,15 +333,6 @@
     <entry file="file://$PROJECT_DIR$/samTemplate_v1.yaml" />
     <entry file="file://$PROJECT_DIR$/samplecode/samTemplate_v1.yaml" />
     <entry file="file://$PROJECT_DIR$/samTemplate_working.yaml" />
-    <entry file="file://$PROJECT_DIR$/samplecode/dynamodb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LambdaCode/lambda_function.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -435,10 +406,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/samplecode/dynamodb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/samTemplate.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        <state relative-caret-position="514">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
         </state>
       </provider>
     </entry>

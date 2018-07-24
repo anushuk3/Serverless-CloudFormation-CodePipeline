@@ -18,7 +18,6 @@ Resources:
           Properties:
             Path: "/"
             Method: PUT
-            ContentType: "application/json"
       Environment:
         Variables:
           REGION: us-east-1
@@ -39,7 +38,6 @@ Resources:
           Properties:
             Path: "/"
             Method: GET
-            ContentType: "application/json"
       Environment:
         Variables:
           REGION: us-east-1
