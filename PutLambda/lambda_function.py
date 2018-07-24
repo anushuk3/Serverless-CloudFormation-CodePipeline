@@ -14,10 +14,10 @@ def lambda_handler(event, context):
     table = dynamodb.Table (os.environ['DB_TABLE_NAME'])
     table.put_item (
         Item={
-            'category': "computer science",
-            'course': "CS005",
-            'description': "This computer science cs005",
-            'fee': "600"
+            'category': category,
+            'course': course,
+            'description': description,
+            'fee': fee
         }
     )
     return dict (
