@@ -1,8 +1,9 @@
 import boto3
 import os
 import json
-def lambda_handler(event, context):
 
+
+def lambda_handler(event, context):
     print ('Inserting data in the table')
 
     # Instantiate a table resource object without actually creating a DynamoDB table.
@@ -19,6 +20,7 @@ def lambda_handler(event, context):
             'fee': "600"
         }
     )
-    print ('Total items in the table are', table.item_count)
-    record = table.item_count
-    return {"statusCode": 200, "body": json.dumps (record)}
+    return dict (
+        statusCode=200,
+        body=json.dumps (event)
+    )
