@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38568865-b5df-49c1-a504-f06ebbf84dc9" name="Default" comment="" />
+    <list default="true" id="38568865-b5df-49c1-a504-f06ebbf84dc9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Serverless-CloudFormation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Serverless-CloudFormation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samTemplate.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/samTemplate.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samplecode/samTemplate_v1.yaml" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,10 +20,15 @@
       <file leaf-file-name="samTemplate.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/samTemplate.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="53" column="58" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
+            <state relative-caret-position="456">
+              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="samTemplate_Main.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/samplecode/samTemplate_Main.yaml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="lambda_function.py" pinned="false" current-in-tab="false">
@@ -31,10 +42,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lambda_function.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="lambda_function.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LambdaCode/lambda_function.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
+            <state relative-caret-position="323">
               <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -46,25 +57,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="samTemplate_v1.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samTemplate_v1.yaml">
+      <file leaf-file-name="dynamodb.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/samplecode/dynamodb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="samTemplate_Main.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samTemplate_Main.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lambda_function.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lambda_function.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CreateTable/lambda_function.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
@@ -88,6 +92,7 @@
         <option value="$PROJECT_DIR$/samTemplate_Main.yaml" />
         <option value="$PROJECT_DIR$/samTemplate.yaml" />
         <option value="$PROJECT_DIR$/samTemplate_v1.yaml" />
+        <option value="$PROJECT_DIR$/samplecode/samTemplate_v1.yaml" />
       </list>
     </option>
   </component>
@@ -119,6 +124,11 @@
               <item name="Serverless-CloudFormation" type="462c0819:PsiDirectoryNode" />
               <item name="LambdaCode" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Serverless-CloudFormation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Serverless-CloudFormation" type="462c0819:PsiDirectoryNode" />
+              <item name="samplecode" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -128,7 +138,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.YAML" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -198,19 +208,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LambdaCode/lambda_function.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#330#342#0" expanded="true" />
-            <element signature="e#436#475#0" expanded="true" />
-            <element signature="e#1785#1850#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/samTemplate_v1.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="817">
@@ -218,10 +215,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/samTemplate.yaml">
+    <entry file="file://$PROJECT_DIR$/samplecode/samTemplate_Main.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samplecode/samTemplate_v1.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="53" column="58" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
+        <state relative-caret-position="456">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samplecode/dynamodb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -232,6 +241,26 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#482#600#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samTemplate.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LambdaCode/lambda_function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#330#342#0" expanded="true" />
+            <element signature="e#436#475#0" expanded="true" />
+            <element signature="e#1785#1850#0" expanded="true" />
           </folding>
         </state>
       </provider>
