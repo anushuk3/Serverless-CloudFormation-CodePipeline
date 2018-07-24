@@ -16,8 +16,9 @@ Resources:
         PutResource:
           Type: Api
           Properties:
-            Path: "/courId"
+            Path: "/"
             Method: PUT
+            ContentType: "application/json"
       Environment:
         Variables:
           REGION: us-east-1
@@ -36,8 +37,9 @@ Resources:
         GetResource:
           Type: Api
           Properties:
-            Path: "/courId"
+            Path: "/"
             Method: GET
+            ContentType: "application/json"
       Environment:
         Variables:
           REGION: us-east-1
