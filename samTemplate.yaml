@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
 Description: Lambda CD for CapStone Project
 Resources:
-  DynamoPutLambda:
+  DyPutLambda:
     Type: 'AWS::Serverless::Function'
     Properties:
       Handler: lambda_function.lambda_handler
@@ -22,7 +22,7 @@ Resources:
         Variables:
           REGION: us-east-1
           DB_TABLE_NAME: CourseCatalog
-  DynamoGetLambda:
+  DyGetLambda:
     Type: 'AWS::Serverless::Function'
     Properties:
       Handler: lambda_function.lambda_handler
@@ -42,3 +42,19 @@ Resources:
         Variables:
           REGION: us-east-1
           DB_TABLE_NAME: CourseCatalog
+  CourseCatalog:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      AttributeDefinitions:
+        - AttributeName: category
+          AttributeType: S
+        - AttributeName: course
+          AttributeType: s
+      KeySchema:
+        - AttributeName: category
+          KeyType: HASH
+        - AttributeName: course
+          KeyType: RANGE
+      ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
