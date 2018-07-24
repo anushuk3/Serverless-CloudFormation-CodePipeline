@@ -14,7 +14,8 @@ def lambda_handler(event, context):
         items = table.query (
             KeyConditionExpression=Key ('category').eq (courId)
         )
-    return dict (
-        statusCode=200,
-        body=json.dumps (event)
-    )
+    return {
+        'statusCode': 200,
+        'headers': {'Content-Type': 'application/json'},
+        'body': json.dumps ({'username': 'bob', 'id': 20})
+    }

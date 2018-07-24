@@ -18,6 +18,9 @@ Resources:
           Properties:
             Path: "/"
             Method: PUT
+      Environment:
+        Variables:
+          REGION: us-east-1
   DynGetLambda:
     Type: 'AWS::Serverless::Function'
     Properties:
@@ -34,3 +37,6 @@ Resources:
           Properties:
             Path: "/"
             Method: GET
+      Environment:
+        Variables:
+          REGION: us-east-1
