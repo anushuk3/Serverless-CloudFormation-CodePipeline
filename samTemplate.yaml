@@ -47,33 +47,8 @@ Resources:
     Properties:
       Handler: lambda_function.lambda_handler
       Runtime: python3.6
-      CodeUri: ./CreateTable
+      CodeUri: ./LambdaCode
       Description: 'Lambda function for CapStone Project Get request to DynamoDB'
       MemorySize: 128
       Timeout: 30
-      Policies: AWSLambdaDynamoDBExecutionRole
-      Events:
-        Stream:
-          Type: DynamoDB
-          Properties:
-            Stream: !GetAtt DynamoDBTable.StreamArn
-            BatchSize: 100
-            StartingPosition: TRIM_HORIZON
-  DynamoDBTable:
-    Type: AWS::DynamoDB::Table
-    Properties:
-      AttributeDefinitions:
-        - AttributeName: category
-          AttributeType: S
-        - AttributeName: course
-          AttributeType: S
-      KeySchema:
-        - AttributeName: id
-          KeyType: HASH
-        - AttributeName: course
-          KeyType: RANGE
-      ProvisionedThroughput:
-        ReadCapacityUnits: 1
-        WriteCapacityUnits: 1
-      StreamSpecification:
-        StreamViewType: NEW_IMAGE
+      Role: 'arn:aws:iam::862117308857:role/MyLambdaRole1'
