@@ -20,11 +20,11 @@ dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
 
 def create_table():
     print('\n*****************************create_table********************************************')
-    print('Creating table AnuragShukla')
+    print('Creating table CourseCatalog')
     try:
         table = dynamodb.create_table(
             # This is the table that we want to create
-            TableName='AnuragShukla',
+            TableName='CourseCatalog',
             # category is the PK ie hash and course is the sort key
             # these two together will uniquely identify a record/row
             KeySchema=[
@@ -41,7 +41,7 @@ def create_table():
             ProvisionedThroughput={ 'ReadCapacityUnits': 1, 'WriteCapacityUnits': 1 }
         )
         # Wait until the table exists.
-        table.meta.client.get_waiter('table_exists').wait(TableName='AnuragShukla')
+        table.meta.client.get_waiter('table_exists').wait(TableName='CourseCatalog')
         print('DONE')
 
     except ClientError as e:
@@ -54,7 +54,7 @@ def insert_data(category, course, description, fee):
     # Instantiate a table resource object without actually creating a DynamoDB table.
     # Note that the attributes of this table are lazy-loaded: a request is not made nor are the attribute
     # values populated until the attributes on the table resource are accessed or its load() method is called.
-    table = dynamodb.Table('AnuragShukla')
+    table = dynamodb.Table('CourseCatalog')
     table.put_item(
        Item={
             # The PK and the sort keys are mandatory
@@ -71,7 +71,7 @@ def insert_data(category, course, description, fee):
 def fetch_all():
     print('\n*****************************fetch_all********************************************')
     print('Getting all data from the table (not suited for production envs)')
-    table = dynamodb.Table('AnuragShukla')
+    table = dynamodb.Table('CourseCatalog')
     response = table.scan()
     print('Total items in the table are ', response['Count'])
     for item in response['Items']:
@@ -80,7 +80,7 @@ def fetch_all():
 def fetch_pk(category):
     print('\n*****************************fetch_pk********************************************')
     print('Getting data from the table based on the PK')
-    table = dynamodb.Table('AnuragShukla')
+    table = dynamodb.Table('CourseCatalog')
     #Different query conditions and select criteria are possible, an example is below
     #ProjectionExpression="#yr, title, info.genres, info.actors[0]",
     #ExpressionAttributeNames={ "#yr": "year" }, # Expression Attribute Names for Projection Expression only.
@@ -95,7 +95,7 @@ def fetch_pk(category):
 def fetch_data(category, course):
     print('\n*****************************fetch_data********************************************')
     print('Getting an individual record from the table based on the PK+Sort key')
-    table = dynamodb.Table('AnuragShukla')
+    table = dynamodb.Table('CourseCatalog')
     response = table.get_item(
         Key={
             'category': category,
@@ -114,7 +114,7 @@ def fetch_data(category, course):
 def update_data(category, course, fee):
     print('\n*****************************update_data********************************************')
     print('Updating data in the table')
-    table = dynamodb.Table('AnuragShukla')
+    table = dynamodb.Table('CourseCatalog')
     table.update_item(
         Key={
             'category': category,
@@ -132,7 +132,7 @@ def update_data(category, course, fee):
 def delete_data(category, course):
     print('\n*****************************delete_data********************************************')
     print('Deleting data in the table')
-    table = dynamodb.Table('AnuragShukla')
+    table = dynamodb.Table('CourseCatalog')
     table.delete_item(
         Key={
             'category': category,

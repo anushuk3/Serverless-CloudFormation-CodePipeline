@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38568865-b5df-49c1-a504-f06ebbf84dc9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/samTemplate.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/samTemplate.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CreateTable/lambda_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/CreateTable/lambda_function.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="samTemplate.yaml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="samTemplate.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/samTemplate.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="704">
@@ -81,25 +81,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lambda_function.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="lambda_function.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CreateTable/lambda_function.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3211">
-              <caret line="169" column="28" selection-start-line="169" selection-start-column="28" selection-end-line="169" selection-end-column="28" />
+            <state relative-caret-position="300">
+              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#330#342#0" expanded="true" />
                 <element signature="e#540#658#0" expanded="true" />
-                <element signature="e#1479#1534#0" expanded="true" />
-                <element signature="e#1785#1850#0" expanded="true" />
-                <element signature="e#2788#2869#0" expanded="true" />
-                <element signature="e#4176#4257#0" expanded="true" />
+                <element signature="e#1481#1536#0" expanded="true" />
+                <element signature="e#1787#1852#0" expanded="true" />
+                <element signature="e#2791#2872#0" expanded="true" />
+                <element signature="e#4182#4263#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>AnuragShukla</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>CourseCatalog</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -111,8 +119,8 @@
         <option value="$PROJECT_DIR$/samTemplate_v1.yaml" />
         <option value="$PROJECT_DIR$/samplecode/samTemplate_v1.yaml" />
         <option value="$PROJECT_DIR$/LambdaCode/lambda_function.py" />
-        <option value="$PROJECT_DIR$/CreateTable/lambda_function.py" />
         <option value="$PROJECT_DIR$/samTemplate.yaml" />
+        <option value="$PROJECT_DIR$/CreateTable/lambda_function.py" />
       </list>
     </option>
   </component>
@@ -133,6 +141,11 @@
             <path>
               <item name="Serverless-CloudFormation" type="b2602c69:ProjectViewProjectNode" />
               <item name="Serverless-CloudFormation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Serverless-CloudFormation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Serverless-CloudFormation" type="462c0819:PsiDirectoryNode" />
+              <item name="CreateTable" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -237,22 +250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CreateTable/lambda_function.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3211">
-          <caret line="169" column="28" selection-start-line="169" selection-start-column="28" selection-end-line="169" selection-end-column="28" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#330#342#0" expanded="true" />
-            <element signature="e#540#658#0" expanded="true" />
-            <element signature="e#1479#1534#0" expanded="true" />
-            <element signature="e#1785#1850#0" expanded="true" />
-            <element signature="e#2788#2869#0" expanded="true" />
-            <element signature="e#4176#4257#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LambdaCode/lambda_function.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1785">
@@ -276,6 +273,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/samTemplate.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GetLambda/lambda_function.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -286,10 +290,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/samTemplate.yaml">
+    <entry file="file://$PROJECT_DIR$/CreateTable/lambda_function.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+        <state relative-caret-position="300">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#330#342#0" expanded="true" />
+            <element signature="e#540#658#0" expanded="true" />
+            <element signature="e#1481#1536#0" expanded="true" />
+            <element signature="e#1787#1852#0" expanded="true" />
+            <element signature="e#2791#2872#0" expanded="true" />
+            <element signature="e#4182#4263#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
