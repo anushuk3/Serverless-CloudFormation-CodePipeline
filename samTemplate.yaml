@@ -55,19 +55,6 @@ Resources:
       Environment:
         Variables:
           REGION: us-east-1
-  ProcessDynamoDBStream:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: lambda_function.lambda_handler
-      Runtime: python3.6
-      CodeUri: ./CreateTable
-      Role: 'arn:aws:iam::862117308857:role/MyLambdaRole1'
-      Events:
-        Stream:
-          Type: DynamoDB
-          Properties:
-            Stream: !GetAtt DynamoDBTable.StreamArn
-            BatchSize: 100
   DynamoDBTable:
     Type: AWS::DynamoDB::Table
     Properties:
