@@ -1,6 +1,6 @@
 import boto3
 import os
-
+import json
 def lambda_handler(event, context):
 
     print ('Inserting data in the table')
@@ -21,4 +21,4 @@ def lambda_handler(event, context):
     )
     print ('Total items in the table are', table.item_count)
     record = table.item_count
-    return {"statusCode": 200, "body": record}
+    return {"statusCode": 200, "body": json.dumps (record)}

@@ -1,5 +1,6 @@
 import boto3
 import os
+import json
 from boto3.dynamodb.conditions import Key, Attr
 
 def lambda_handler(event, context):
@@ -14,4 +15,4 @@ def lambda_handler(event, context):
             KeyConditionExpression=Key('category').eq(courId)
         )
 
-    return {"statusCode": 200, "body": items["Items"]}
+        return {"statusCode": 200, "body": json.dumps(items)}

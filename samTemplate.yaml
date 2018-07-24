@@ -16,7 +16,7 @@ Resources:
         PutResource:
           Type: Api
           Properties:
-            Path: "/"
+            Path: "/courId"
             Method: PUT
       Environment:
         Variables:
@@ -36,7 +36,7 @@ Resources:
         GetResource:
           Type: Api
           Properties:
-            Path: "/"
+            Path: "/courId"
             Method: GET
       Environment:
         Variables:
