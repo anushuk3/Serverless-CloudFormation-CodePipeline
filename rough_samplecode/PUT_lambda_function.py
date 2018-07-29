@@ -1,7 +1,7 @@
-#*********************************************************************************************************************
-#Author – Anurag Shukla
-#This script will operate on AWS DynamoDB to showcase various APIs
-#*********************************************************************************************************************
+# *********************************************************************************************************************
+# Author – Anurag Shukla
+# This script will operate on AWS DynamoDB to showcase various APIs
+# *********************************************************************************************************************
 
 import boto3
 import json
@@ -9,13 +9,13 @@ from botocore.exceptions import ClientError
 from boto3.dynamodb.conditions import Key, Attr
 
 # Get the service resource on the cloud
-#dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
+# dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
 # Get the service resource running on localhost; ensure you have the CLI done with the credentials file in .aws folder
 # The nature of the credentials for localhost does not matter; type in any junk for accesskey and secret
 # java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
-#aws dynamodb describe-table --table-name anurag --endpoint-url http://localhost:8000 ( Listing the table)
+# aws dynamodb describe-table --table-name anurag --endpoint-url http://localhost:8000 ( Listing the table)
 # aws dynamodb describe-table --table-name anurag --endpoint-url http://localhost:8000 ( describe the table)
-#dynamodb = boto3.resource('dynamodb', region_name='us-east-1', endpoint_url='http://localhost:8000')
+# dynamodb = boto3.resource('dynamodb', region_name='us-east-1', endpoint_url='http://localhost:8000')
 
 def lambda_handler(event, context):
     #dynamodb = boto3.resource ('dynamodb', region_name='us-east-1')
