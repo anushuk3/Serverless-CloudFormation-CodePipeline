@@ -13,3 +13,6 @@ def hello(event, context):
             statusCode=500,
             body=str(e)
         )
+
+try: import simplejson as json
+except ImportError: import json
