@@ -14,12 +14,9 @@ from botocore.exceptions import ClientError
 # The nature of the credentials for localhost does not matter; type in any junk for accesskey and secret
 # java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
 # aws dynamodb describe-table --table-name anurag --endpoint-url http://localhost:8000 ( Listing the table)
-# aws dynamodb describe-table --table-name anurag --endpoint-url http://localhost:8000 ( describe the table)
-
 
 def lambda_handler(event, context):
     dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
-
     #dynamodb = boto3.resource('dynamodb', region_name='us-east-1', endpoint_url='http://localhost:8000')
 
     def create_table():
@@ -69,7 +66,7 @@ def lambda_handler(event, context):
             }
         )
         # Print out some data about the table.
-        print('Total items in the table are', table.item_count)
+        # print('Total items in the table are', table.item_count)
 
     def update_data(category, courseId, fee):
         print('\n*****************************update_data********************************************')
@@ -97,7 +94,7 @@ def lambda_handler(event, context):
                 'courseId': courseId
             }
         )
-        print('Items left in the table are', table.item_count)
+        # print('Items left in the table are', table.item_count)
 
 
     # Create the table
@@ -114,9 +111,11 @@ def lambda_handler(event, context):
     insert_data('Data Science', 'Machine Learning', 'Machine learning courses focus on creating systems to utilize and learn from large sets of data. Topics of study include predictive algorithms, natural language processing, and statistical pattern recognition.', 15)
     insert_data('Data Science', 'Probability and Statistics','Probability and statistics courses teach skills in understanding whether data is meaningful, including optimization, inference, testing,and other methods for analyzing patterns in data and using them to predict, understand, and improve results.', 16)
     # Delete a record that exists
-    # delete_data('Computer Science', 'CS00001')
+    delete_data('Computer Science', 'Algorithms')
     # Insert some more data for a different partition
+
     return dict(
-        statusCode=200,
-        body=json.dumps(event)
+            statusCode=200,
+            body=json.dumps(event)
     )
+
