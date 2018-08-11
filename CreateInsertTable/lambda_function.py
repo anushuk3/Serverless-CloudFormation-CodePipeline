@@ -111,7 +111,7 @@ def lambda_handler(event, context):
     insert_data('Data Science', 'Machine Learning', 'Machine learning courses focus on creating systems to utilize and learn from large sets of data. Topics of study include predictive algorithms, natural language processing, and statistical pattern recognition.', 15)
     insert_data('Data Science', 'Probability and Statistics','Probability and statistics courses teach skills in understanding whether data is meaningful, including optimization, inference, testing,and other methods for analyzing patterns in data and using them to predict, understand, and improve results.', 16)
     # Delete a record that exists
-    delete_data('Computer Science', 'Algorithms')
+    # delete_data('Computer Science', 'Algorithms')
     # Insert some more data for a different partition
 
     return dict(
